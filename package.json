@@ -1,0 +1,27 @@
+{
+  "name": "wakeme",
+  "version": "0.0.0",
+  "description": "Before you go-go!",
+  "main": "main.js",
+  "bin": {
+    "wakeme": "q"
+  },
+  "scripts": {
+    "start": "node . --quiet",
+    "export": "node . > stats.ndjson",
+    "query": "cat stats.ndjson | ./q --"
+  },
+  "keywords": [
+    "waka-time",
+    "stats",
+    "cli"
+  ],
+  "author": "Alvaro Cabrera <yo@soypache.co>",
+  "license": "MIT",
+  "dependencies": {
+    "gmail-api-sync": "^1.2.10",
+    "googleapis": "^40.0.0",
+    "humanize-duration": "^3.18.0",
+    "jsonpath-plus": "^0.20.1"
+  }
+}
